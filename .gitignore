@@ -166,6 +166,7 @@ cython_debug/
 ### Python Patch ###
 # Poetry local configuration file - https://python-poetry.org/docs/configuration/#local-configuration
 poetry.toml
-
+.pdm-python
+db.sqlite3
 
 # End of https://www.toptal.com/developers/gitignore/api/python
