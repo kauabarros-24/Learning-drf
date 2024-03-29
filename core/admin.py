@@ -53,13 +53,6 @@ admin.site.register(models.Categoria)
 admin.site.register(models.Editora)
 admin.site.register(models.Autor)
 
-from livraria.models import Autor, Editora, Categoria, Livro
-
-admin.site.register(Categoria)
-admin.site.register(Editora)
-admin.site.register(Autor)
-admin.site.register(Livro)
-
 
 
 
