@@ -1,5 +1,9 @@
 import magic
 
+#Criação da pasta para file magic -> 02 de abril:
+
+
+
 CONTENT_TYPE_ICO = "image/x-icon"
 CONTENT_TYPE_JPG = "image/jpeg"
 CONTENT_TYPE_PNG = "image/png"
