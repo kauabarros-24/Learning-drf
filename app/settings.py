@@ -27,13 +27,14 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "cloudinary_storage",
     "cloudinary",
+    "core",
     "corsheaders",
     "django_extensions",
     "django_filters",
     "drf_spectacular",
     "rest_framework",
     "rest_framework_simplejwt",
-    "core",
+    "uploader",
 ]
 
 MIDDLEWARE = [
@@ -151,4 +152,5 @@ SPECTACULAR_SETTINGS = {
 
 print(f"MODE: {MODE} \nMEDIA_URL: {MEDIA_URL} \nDATABASE: {DATABASES}")
 
+#Acessar imagens
 

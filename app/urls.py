@@ -1,5 +1,9 @@
 from django.contrib import admin
 from django.urls import include, path
+#Imagens:   
+from django.conf import settings
+from django.conf.urls.static import static
+from uploader.router import router as uploader_router
 
 from drf_spectacular.views import (
     SpectacularAPIView,
@@ -37,4 +41,6 @@ urlpatterns = [
     path("token/refresh/", TokenRefreshView.as_view(), name="token_refresh"),
     # API
     path("api/", include(router.urls)),
+    path("api/media", include(uploader_router.urls)),
 ]
+urlpatterns += static(settings.MEDIA_ENDPOINT, document_root=settings.MEDIA_ROOT)
