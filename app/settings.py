@@ -153,7 +153,3 @@ SPECTACULAR_SETTINGS = {
 print(f"MODE: {MODE} \nMEDIA_URL: {MEDIA_URL} \nDATABASE: {DATABASES}")
 
 #Acessar imagens:
-MEDIA_URL = "http://0.0.0.0:19003/api/media/"
-MEDIA_ENDPOINT = "/media/"
-MEDIA_ROOT = os.path.join(BASE_DIR, "/media/")
-FILE_UPLOAD_PERMISSIONS = 0o640
