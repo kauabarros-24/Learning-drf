@@ -1,5 +1,6 @@
 from django.contrib import admin
 from django.urls import include, path
+
 from drf_spectacular.views import (
     SpectacularAPIView,
     SpectacularRedocView,
@@ -34,6 +35,4 @@ urlpatterns = [
     # Simple JWT
     path("token/", TokenObtainPairView.as_view(), name="token_obtain_pair"),
     path("token/refresh/", TokenRefreshView.as_view(), name="token_refresh"),
-    # API
-    path("api/", include(router.urls)),
 ]
